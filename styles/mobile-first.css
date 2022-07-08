@@ -1,0 +1,168 @@
+@font-face {
+    font-family: IRANYekan;
+    src: url(../fonts/Qs_Iranyekan.ttf);
+}
+
+* {
+    background: none repeat scroll 0 0 transparent;
+    border: medium none;
+    border-spacing: 0;
+    color: #999999;
+    font-family: IRANYekan, sans-serif, Tahoma;
+    font-size: 0.95rem;
+    font-weight: normal;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-indent: 0;
+    box-sizing: border-box;
+    transition: all 0.1s;
+}
+
+.text-dark {
+    color: #62666D;
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+.font-size-12 {
+    font-size: 12px;
+}
+
+.font-size-15 {
+    font-size: 15px;
+}
+
+.font-size-19 {
+    font-size: 19px;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.dis-flex {
+    display: flex;
+}
+
+.dis-none {
+    display: none;
+}
+
+.dis-block {
+    display: block;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.gap--5 {
+    gap: .5rem;
+}
+
+#search-box {
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 10%);
+    padding: .6rem;
+}
+
+#search-box div {
+    background-color: RGB(239, 240, 241);
+    border-radius: 5px;
+    width: 100%;
+}
+
+#search-box div button:first-child {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-box div button:last-child {
+    padding: 0 1rem;
+    font-size: 12px;
+}
+
+#search-box div input {
+    width: calc(100% - 151.02px);
+}
+
+#search-box div input:focus {
+    outline: none;
+}
+
+#search-box i {
+    font-size: 19px;
+}
+
+#search-box>button {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mobile-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    background-color: #fff;
+    padding-bottom: 100px;
+}
+
+#mobile-menu * {
+    color: #030A17;
+}
+
+#mobile-menu div:first-child {
+    position: relative;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 10%);
+    padding: 1rem;
+}
+
+#mobile-menu div:first-child button {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+}
+
+#mobile-menu div:nth-child(2) {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    padding: 17px;
+    background-color: RGB(239, 240, 241);
+}
+
+#mobile-menu div:nth-child(2) i {
+    font-size: 55px;
+    color: #999999;
+}
+
+.blue-button {
+    border: 1px solid #0084FF;
+    border-radius: 100px;
+    padding: 6px 12.8px;
+    color: #0084FF !important;
+}
+
+#mobile-menu li {
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    gap: 1rem;
+    border-bottom: 1px solid #99999921;
+}
