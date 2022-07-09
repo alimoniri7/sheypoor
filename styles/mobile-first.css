@@ -24,6 +24,46 @@
     color: #62666D;
 }
 
+.text-pink {
+    color: #fe5576;
+}
+
+.text-green {
+    color: #008c99;
+}
+
+.text-blue {
+    color: #0060ff;
+}
+
+.text-orange {
+    color: #ffc000;
+}
+
+.text-gold {
+    color: #d9a400;
+}
+
+.text-dark-orange {
+    color: #ffa056;
+}
+
+.text-light-blue {
+    color: #4ca9ff;
+}
+
+.text-purple {
+    color: #911265;
+}
+
+.text-dark-blue {
+    color: #0052d9;
+}
+
+.text-light-pink {
+    color: #ff89a0;
+}
+
 .text-bold {
     font-weight: 700;
 }
@@ -44,6 +84,10 @@
     background-color: white;
 }
 
+.bg-light-gray {
+    background-color: #F9F9F9;
+}
+
 .width-100 {
     width: 100%;
 }
@@ -60,6 +104,14 @@
     display: block;
 }
 
+.invisible {
+    opacity: 0;
+}
+
+.visible {
+    opacity: 1;
+}
+
 .align-center {
     align-items: center;
 }
@@ -68,9 +120,22 @@
     gap: .5rem;
 }
 
-#search-box {
+.mt-1 {
+    margin-top: 1rem;
+}
+
+header {
+    position: relative;
     box-shadow: 0 1px 4px 0 rgb(0 0 0 / 10%);
-    padding: .6rem;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#search-box {
+    padding: .8rem;
+    max-width: 980px;
+    margin: 0 auto;
 }
 
 #search-box div {
@@ -165,4 +230,79 @@
     align-items: center;
     gap: 1rem;
     border-bottom: 1px solid #99999921;
+}
+
+
+/* category section /---------------------------------------------------------- */
+
+main {
+    width: 100%;
+    max-width: 980px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#category a {
+    display: flex;
+    flex-direction: column;
+    gap: 6.5px;
+    align-items: center;
+    width: min-content;
+}
+
+#category a i {
+    width: 62.38px;
+    height: 62.38px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-shadow: 0 1px 6px 0 rgb(3 10 22 / 5%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+#category a span {
+    font-size: 9.6px;
+    text-align: center;
+}
+
+#category>div {
+    display: flex;
+    justify-content: space-around;
+}
+
+#category-scroll {
+    display: flex;
+    width: 100vw;
+    overflow-x: scroll;
+    height: 50px;
+    background-color: #fff;
+    padding: 0 .3rem;
+    gap: .5rem;
+    align-items: flex-start;
+    position: sticky;
+    top: 79.5px;
+    left: 0;
+    transition: opacity .3s ease-in-out;
+}
+
+#category-scroll a {
+    margin-top: .3rem;
+    display: flex;
+    padding: 0 1rem;
+    border: 1px solid #d0d1d3;
+    height: 35px;
+    align-items: center;
+    gap: .7rem;
+    border-radius: 6px;
+}
+
+#category-scroll a span {
+    font-size: 12px;
+}
+
+#category-scroll a i {
+    font-size: 16px;
 }
