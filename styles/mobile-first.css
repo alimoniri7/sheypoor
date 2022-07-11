@@ -20,6 +20,10 @@
     transition: all 0.1s;
 }
 
+button {
+    cursor: pointer;
+}
+
 .text-dark {
     color: #62666D;
 }
@@ -78,6 +82,10 @@
 
 .font-size-19 {
     font-size: 19px;
+}
+
+.font-size-18 {
+    font-size: 18px;
 }
 
 .bg-white {
@@ -178,7 +186,7 @@ header {
 }
 
 #mobile-menu {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100vw;
@@ -186,6 +194,7 @@ header {
     overflow-y: scroll;
     background-color: #fff;
     padding-bottom: 100px;
+    z-index: 2;
 }
 
 #mobile-menu * {
@@ -220,7 +229,7 @@ header {
 .blue-button {
     border: 1px solid #0084FF;
     border-radius: 100px;
-    padding: 6px 12.8px;
+    padding: 6px 13px;
     color: #0084FF !important;
 }
 
@@ -235,12 +244,10 @@ header {
 
 /* category section /---------------------------------------------------------- */
 
-main {
-    width: 100%;
+#category {
     max-width: 980px;
-    display: flex;
-    flex-direction: column;
     margin: 0 auto;
+    margin-bottom: 3rem;
 }
 
 #category a {
@@ -274,9 +281,8 @@ main {
 }
 
 #category-scroll {
-    display: flex;
-    width: 100vw;
-    overflow-x: scroll;
+    width: 100%;
+    overflow-x: auto;
     height: 50px;
     background-color: #fff;
     padding: 0 .3rem;
@@ -285,8 +291,33 @@ main {
     position: sticky;
     top: 79.5px;
     left: 0;
-    transition: opacity .3s ease-in-out;
+    transition: all 3s ease-in-out;
 }
+
+#category-scroll::-webkit-scrollbar {
+    height: 10px;
+    visibility: hidden;
+}
+
+#category-scroll::-webkit-scrollbar:hover,
+#category-scroll::-webkit-scrollbar-thumb:hover {
+    visibility: visible;
+}
+
+#category-scroll::-webkit-scrollbar-thumb {
+    background-color: #9a9b9e;
+    height: 10px;
+    border-radius: 100px;
+    visibility: hidden;
+}
+
+
+/* #category-scroll::-webkit-scrollbar {}
+
+#category-scroll::-webkit-scrollbar-thumb {
+    height: 5px;
+    background-color: #0052d9;
+} */
 
 #category-scroll a {
     margin-top: .3rem;
@@ -305,4 +336,125 @@ main {
 
 #category-scroll a i {
     font-size: 16px;
+}
+
+
+/* toggle buttons /---------------------------------------------- */
+
+#toggle-btn {
+    width: 97%;
+    height: 50px;
+    position: sticky;
+    top: 140px;
+    left: 0;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 3px 7px 0 rgb(0 0 0 / 10%);
+    display: flex;
+    margin: 0 auto;
+}
+
+#toggle-btn button {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: inherit;
+    font-size: 13px;
+}
+
+.selected {
+    background-color: #E5F2FE;
+    color: #03ACED;
+}
+
+
+/* horzintal container /------------------------------ */
+
+#horzintal-container {
+    width: 100%;
+    overflow-x: auto;
+    height: 251.5px;
+    display: flex;
+    background-color: #EFF0F1;
+    gap: 1rem;
+    padding: 12.8px 0;
+    align-items: flex-start;
+}
+
+#horzintal-container>div:first-child {
+    height: 100%;
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 5px 0;
+    align-items: flex-start;
+}
+
+#horzintal-container>div:first-child i {
+    font-size: 40px;
+}
+
+#horzintal-container>div:first-child p {
+    line-height: 16px;
+}
+
+#horzintal-container>div:first-child a {
+    margin: 0 auto;
+}
+
+
+/* ---------------------------------------------------------- */
+
+.content-box {
+    display: flex;
+    width: 156px;
+    height: 100%;
+    flex-direction: column;
+    padding: 6.4px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 10%);
+}
+
+.content-box * {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.content-box>div {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+}
+
+.fa-truck-fast {
+    color: #0084FF !important;
+}
+
+.content-box>div div {
+    display: flex;
+    align-items: center;
+    padding: .1rem .3rem;
+    background-color: #e5f2fe;
+    color: #0084FF;
+    font-weight: 700;
+    gap: .3rem;
+    border-radius: 5px;
+}
+
+.content-box>div div i {
+    font-size: 15px;
+}
+
+.content-box>div p {
+    overflow: hidden;
+    width: 100%;
+    height: 16.8px;
+}
+
+.content-box img {
+    width: 100%;
 }

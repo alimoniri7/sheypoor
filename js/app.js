@@ -21,13 +21,30 @@ document.getElementById('close-button').addEventListener('click', function() {
 
 //category scroll /-------------------------
 window.onscroll = function() {
-    if (document.documentElement.scrollTop > 350) {
-        document.getElementById("category-scroll").classList.add('visible');
-        document.getElementById("category-scroll").classList.remove('invisible');
-
+    if (document.documentElement.scrollTop > 220) {
+        document.getElementById("category-scroll").classList.add('dis-flex');
+        document.getElementById("category-scroll").classList.remove('dis-none');
     } else {
-        document.getElementById("category-scroll").classList.remove('visible');
-        document.getElementById("category-scroll").classList.add('invisible');
+        document.getElementById("category-scroll").classList.remove('dis-flex');
+        document.getElementById("category-scroll").classList.add('dis-none');
     }
 
 }
+
+// toggle buttons /-----------------------------
+
+let buttons = [document.getElementById('toggle-btn').children[0], document.getElementById('toggle-btn').children[1]]
+
+console.log(buttons)
+buttons.forEach(button => {
+    button.addEventListener('click', function() {
+        if (button.classList == 'selected') {
+            return
+        } else {
+            buttons.forEach(button => {
+                button.classList.remove('selected')
+            })
+            button.classList.add('selected')
+        }
+    })
+})
