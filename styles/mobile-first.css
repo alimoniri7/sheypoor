@@ -374,9 +374,11 @@ header {
 
 #horzintal-container {
     width: 100%;
-    overflow-x: auto;
-    height: 251.5px;
+    overflow-x: scroll;
+    height: 270px;
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     background-color: #EFF0F1;
     gap: 1rem;
     padding: 12.8px 0;
@@ -401,6 +403,10 @@ header {
     line-height: 16px;
 }
 
+#horzintal-container>div:first-child h3 {
+    color: #000;
+}
+
 #horzintal-container>div:first-child a {
     margin: 0 auto;
 }
@@ -413,9 +419,11 @@ header {
     width: 156px;
     height: 100%;
     flex-direction: column;
-    padding: 6.4px;
-    border-radius: 10px;
+    padding: 5px;
+    border-radius: 6px;
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 10%);
+    background-color: #fff;
+    gap: .7rem;
 }
 
 .content-box * {
@@ -426,8 +434,27 @@ header {
 .content-box>div {
     display: flex;
     align-items: flex-start;
+    justify-content: flex-start;
     flex-direction: column;
     width: 100%;
+    text-align: start;
+}
+
+.content-box>div a {
+    display: flex;
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    color: #000;
+    font-weight: 500;
+}
+
+.content-box>div span {
+    margin-top: .4rem;
+}
+
+.content-box>div span b {
+    color: #000;
 }
 
 .fa-truck-fast {
@@ -441,7 +468,7 @@ header {
     background-color: #e5f2fe;
     color: #0084FF;
     font-weight: 700;
-    gap: .3rem;
+    gap: .6rem;
     border-radius: 5px;
 }
 
@@ -450,11 +477,13 @@ header {
 }
 
 .content-box>div p {
-    overflow: hidden;
+    overflow: clip;
     width: 100%;
     height: 16.8px;
+    display: flex;
 }
 
 .content-box img {
     width: 100%;
+    border-radius: 5px;
 }
