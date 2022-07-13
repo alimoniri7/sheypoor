@@ -1,0 +1,9 @@
+@media (min-width:700px) {
+    .main-content-box img {
+        width: 15vw;
+        height: 15vw;
+    }
+    #main-container {
+        padding: 2rem;
+    }
+}

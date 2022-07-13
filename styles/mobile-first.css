@@ -372,6 +372,10 @@ header {
 
 /* horzintal container /------------------------------ */
 
+main>section:first-child {
+    background-color: #EFF0F1;
+}
+
 #horzintal-container {
     width: 100%;
     overflow-x: scroll;
@@ -379,7 +383,6 @@ header {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    background-color: #EFF0F1;
     gap: 1rem;
     padding: 12.8px 0;
     align-items: flex-start;
@@ -412,20 +415,7 @@ header {
 }
 
 #horzintal-container::-webkit-scrollbar {
-    height: 10px;
-    visibility: hidden;
-}
-
-#horzintal-container::-webkit-scrollbar:hover,
-#horzintal-container::-webkit-scrollbar-thumb:hover {
-    visibility: visible;
-}
-
-#horzintal-container::-webkit-scrollbar-thumb {
-    background-color: #9a9b9e;
-    height: 10px;
-    border-radius: 100px;
-    visibility: hidden;
+    display: none
 }
 
 
@@ -524,7 +514,7 @@ header {
     background-color: #fff;
     border-radius: 5px;
     box-shadow: 0 2px 5px 0 rgb(0 0 0 / 10%);
-    flex: 1 1 250px;
+    flex: 1 1 300px;
 }
 
 .main-content-box img {

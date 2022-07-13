@@ -1,0 +1,45 @@
+@media (min-width:900px) {
+    .main-content-box img {
+        width: 15vw;
+        height: 15vw;
+    }
+    #horzintal-container::-webkit-scrollbar {
+        height: 10px;
+        visibility: hidden;
+        display: block;
+    }
+    #horzintal-container::-webkit-scrollbar:hover,
+    #horzintal-container::-webkit-scrollbar-thumb:hover {
+        visibility: visible;
+    }
+    #horzintal-container::-webkit-scrollbar-thumb {
+        background-color: #9a9b9e;
+        height: 10px;
+        border-radius: 100px;
+        visibility: hidden;
+    }
+    #mobile-menu {
+        padding: 0 5rem;
+    }
+}
+
+@media (min-width:1000px) {
+    .main-content-box img {
+        width: 200px;
+        height: 150px;
+    }
+    .main-content-box {
+        flex-direction: column;
+        flex: none;
+        padding: 1rem;
+    }
+    #main-container {
+        max-width: 1030px;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+    #horzintal-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}

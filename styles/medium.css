@@ -1,0 +1,6 @@
+@media (min-width: 491px) {
+    .main-content-box img {
+        width: 25vw;
+        height: 25vw;
+    }
+}
